@@ -35,7 +35,7 @@ public class Student implements Serializable {
 	@ManyToMany
 	Set<Course> courses;
 
-	private Boolean enabled;
+	
 
 	private String rut;
 
@@ -79,9 +79,6 @@ public class Student implements Serializable {
 		this.lastName = lastName;
 	}
 
-	
-	
-
 	public Set<Course> getCourses() {
 		return courses;
 	}
@@ -90,12 +87,6 @@ public class Student implements Serializable {
 		this.courses = courses;
 	}
 
-	public Boolean getEnabled() {
-		return enabled;
-	}
-
-	public void setEnabled(Boolean enabled) {
-		this.enabled = enabled;
-	}
+	
 
 }
