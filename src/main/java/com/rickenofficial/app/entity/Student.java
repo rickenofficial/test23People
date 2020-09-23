@@ -32,8 +32,8 @@ public class Student implements Serializable {
 
 	private String lastName;
 
-//	@ManyToMany
-//	Set<Course> courses;
+	@ManyToMany
+	Set<Course> courses;
 
 	private Boolean enabled;
 
@@ -81,14 +81,14 @@ public class Student implements Serializable {
 
 	
 	
-//
-//	public Set<Course> getCourses() {
-//		return courses;
-//	}
-//
-//	public void setCourses(Set<Course> courses) {
-//		this.courses = courses;
-//	}
+
+	public Set<Course> getCourses() {
+		return courses;
+	}
+
+	public void setCourses(Set<Course> courses) {
+		this.courses = courses;
+	}
 
 	public Boolean getEnabled() {
 		return enabled;

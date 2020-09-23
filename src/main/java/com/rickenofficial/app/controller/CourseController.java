@@ -61,7 +61,7 @@ public class CourseController {
 				return ResponseEntity.ok(oCourse);
 			}
 
-		}
+		} 
 		return ResponseEntity.notFound().build();
 	}
 

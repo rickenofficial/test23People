@@ -15,7 +15,7 @@ public interface CourseService {
 
 		public Page<Course> findAll(Pageable pageable);
 
-		public Optional<Course> findById(long id);
+		public Optional<Course> findById(Long id);
 
 		public Course save(Course course);
 

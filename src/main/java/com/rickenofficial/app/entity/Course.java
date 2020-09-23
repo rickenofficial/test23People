@@ -24,7 +24,7 @@ public class Course implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(length = 50, unique = true)
-	private int id;
+	private Long id;
 
 	@Column
 	@NotNull
@@ -35,14 +35,14 @@ public class Course implements Serializable {
 	@NotEmpty(message = "This field cannot be empty")
 	private String courseName;
 
-//	@ManyToMany
-//	Set<Student> students;
+	@ManyToMany
+	Set<Student> students;
 	
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
